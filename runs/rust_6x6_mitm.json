@@ -1,0 +1,510 @@
+{
+  "aborted": false,
+  "code": {
+    "crate": "esp",
+    "git_commit": "1d18ba6af635f0a29937a76e5e2422191638f7a6",
+    "git_dirty": "false",
+    "version": "0.1.0"
+  },
+  "disk_bytes": 0,
+  "finished_utc": "2026-10-20T14:57:17+00:00",
+  "implementation": "rust",
+  "labeled": "4704531536541600",
+  "labeled_mod_p": [
+    "4704531536541600",
+    "4704531536541600",
+    "4704531536541600"
+  ],
+  "layers": [
+    {
+      "count_sum_mod_p": [
+        "6",
+        "6",
+        "6"
+      ],
+      "hash_sum_mod_p": [
+        "1057502637391256413",
+        "1057502637391257953",
+        "1057502637391258987"
+      ],
+      "input_on_disk": false,
+      "key_bits": 50,
+      "m": 36,
+      "output_on_disk": false,
+      "passes": 1,
+      "seconds": [
+        0.0012480999999999998,
+        0.0026608,
+        0.001036
+      ],
+      "states": 1,
+      "transitions": 1
+    },
+    {
+      "count_sum_mod_p": [
+        "36",
+        "36",
+        "36"
+      ],
+      "hash_sum_mod_p": [
+        "9033922607642231928",
+        "9033922607642236128",
+        "9033922607642238948"
+      ],
+      "input_on_disk": false,
+      "key_bits": 50,
+      "m": 35,
+      "output_on_disk": false,
+      "passes": 1,
+      "seconds": [
+        0.0071493,
+        0.0052869,
+        0.0077256
+      ],
+      "states": 2,
+      "transitions": 2
+    },
+    {
+      "count_sum_mod_p": [
+        "216",
+        "216",
+        "216"
+      ],
+      "hash_sum_mod_p": [
+        "3163708077197198235",
+        "3163708077197225535",
+        "3163708077197243865"
+      ],
+      "input_on_disk": false,
+      "key_bits": 50,
+      "m": 34,
+      "output_on_disk": false,
+      "passes": 1,
+      "seconds": [
+        0.0083367,
+        0.0054404,
+        0.0071402
+      ],
+      "states": 5,
+      "transitions": 5
+    },
+    {
+      "count_sum_mod_p": [
+        "1290",
+        "1290",
+        "1290"
+      ],
+      "hash_sum_mod_p": [
+        "1079035858939263842",
+        "1079035858939392082",
+        "1079035858939478186"
+      ],
+      "input_on_disk": false,
+      "key_bits": 50,
+      "m": 33,
+      "output_on_disk": false,
+      "passes": 1,
+      "seconds": [
+        0.0109102,
+        0.0059989,
+        0.0073704
+      ],
+      "states": 14,
+      "transitions": 14
+    },
+    {
+      "count_sum_mod_p": [
+        "7620",
+        "7620",
+        "7620"
+      ],
+      "hash_sum_mod_p": [
+        "6701170736112825408",
+        "6701170736113937568",
+        "6701170736114684304"
+      ],
+      "input_on_disk": false,
+      "key_bits": 50,
+      "m": 32,
+      "output_on_disk": false,
+      "passes": 1,
+      "seconds": [
+        0.008574,
+        0.0061143,
+        0.0070366
+      ],
+      "states": 43,
+      "transitions": 45
+    },
+    {
+      "count_sum_mod_p": [
+        "44220",
+        "44220",
+        "44220"
+      ],
+      "hash_sum_mod_p": [
+        "4531362789051631086",
+        "4531362789057580806",
+        "4531362789061575618"
+      ],
+      "input_on_disk": false,
+      "key_bits": 50,
+      "m": 31,
+      "output_on_disk": false,
+      "passes": 1,
+      "seconds": [
+        0.008716,
+        0.0059069,
+        0.0060567
+      ],
+      "states": 145,
+      "transitions": 157
+    },
+    {
+      "count_sum_mod_p": [
+        "250320",
+        "250320",
+        "250320"
+      ],
+      "hash_sum_mod_p": [
+        "6922340051309352713",
+        "6922340051344757173",
+        "6922340051368528739"
+      ],
+      "input_on_disk": false,
+      "key_bits": 50,
+      "m": 30,
+      "output_on_disk": false,
+      "passes": 1,
+      "seconds": [
+        0.0086093,
+        0.0057427,
+        0.0065911
+      ],
+      "states": 522,
+      "transitions": 583
+    },
+    {
+      "count_sum_mod_p": [
+        "1371720",
+        "1371720",
+        "1371720"
+      ],
+      "hash_sum_mod_p": [
+        "5529033492299265235",
+        "5529033492490924535",
+        "5529033492619610065"
+      ],
+      "input_on_disk": false,
+      "key_bits": 45,
+      "m": 29,
+      "output_on_disk": false,
+      "passes": 1,
+      "seconds": [
+        0.0079443,
+        0.0063535,
+        0.0070611
+      ],
+      "states": 1962,
+      "transitions": 2281
+    },
+    {
+      "count_sum_mod_p": [
+        "7215600",
+        "7215600",
+        "7215600"
+      ],
+      "hash_sum_mod_p": [
+        "214405737349927727",
+        "214405738359612067",
+        "214405739037542981"
+      ],
+      "input_on_disk": false,
+      "key_bits": 45,
+      "m": 28,
+      "output_on_disk": false,
+      "passes": 1,
+      "seconds": [
+        0.0098687,
+        0.0058625,
+        0.0066192
+      ],
+      "states": 7464,
+      "transitions": 9066
+    },
+    {
+      "count_sum_mod_p": [
+        "36086400",
+        "36086400",
+        "36086400"
+      ],
+      "hash_sum_mod_p": [
+        "6177595928690540697",
+        "6177595933748410437",
+        "6177595937144408691"
+      ],
+      "input_on_disk": false,
+      "key_bits": 45,
+      "m": 27,
+      "output_on_disk": false,
+      "passes": 1,
+      "seconds": [
+        0.0103124,
+        0.0060779,
+        0.0073181
+      ],
+      "states": 27001,
+      "transitions": 35139
+    },
+    {
+      "count_sum_mod_p": [
+        "169646400",
+        "169646400",
+        "169646400"
+      ],
+      "hash_sum_mod_p": [
+        "5039758047401067015",
+        "5039758071156974715",
+        "5039758087107369885"
+      ],
+      "input_on_disk": false,
+      "key_bits": 45,
+      "m": 26,
+      "output_on_disk": false,
+      "passes": 1,
+      "seconds": [
+        0.0111259,
+        0.0081644,
+        0.0078234
+      ],
+      "states": 86217,
+      "transitions": 125281
+    },
+    {
+      "count_sum_mod_p": [
+        "746046000",
+        "746046000",
+        "746046000"
+      ],
+      "hash_sum_mod_p": [
+        "7724612908732541878",
+        "7724613013572977438",
+        "7724613083965841314"
+      ],
+      "input_on_disk": false,
+      "key_bits": 45,
+      "m": 25,
+      "output_on_disk": false,
+      "passes": 1,
+      "seconds": [
+        0.0108332,
+        0.0073342,
+        0.0077435
+      ],
+      "states": 231339,
+      "transitions": 392789
+    },
+    {
+      "count_sum_mod_p": [
+        "3117718800",
+        "3117718800",
+        "3117718800"
+      ],
+      "hash_sum_mod_p": [
+        "7386729959865597121",
+        "7386730396505122541",
+        "7386730689677375323"
+      ],
+      "input_on_disk": false,
+      "key_bits": 45,
+      "m": 24,
+      "output_on_disk": false,
+      "passes": 1,
+      "seconds": [
+        0.0157009,
+        0.0134201,
+        0.012397700000000001
+      ],
+      "states": 532557,
+      "transitions": 1037010
+    },
+    {
+      "count_sum_mod_p": [
+        "12736274400",
+        "12736274400",
+        "12736274400"
+      ],
+      "hash_sum_mod_p": [
+        "3701946248005860008",
+        "3701948033865860968",
+        "3701949232943290184"
+      ],
+      "input_on_disk": false,
+      "key_bits": 45,
+      "m": 23,
+      "output_on_disk": false,
+      "passes": 1,
+      "seconds": [
+        0.0314264,
+        0.022700500000000002,
+        0.0229504
+      ],
+      "states": 1066558,
+      "transitions": 2334043
+    },
+    {
+      "count_sum_mod_p": [
+        "51754500000",
+        "51754500000",
+        "51754500000"
+      ],
+      "hash_sum_mod_p": [
+        "6380105733868934252",
+        "6380112982548615292",
+        "6380117849519258276"
+      ],
+      "input_on_disk": false,
+      "key_bits": 45,
+      "m": 22,
+      "output_on_disk": false,
+      "passes": 1,
+      "seconds": [
+        0.0535135,
+        0.044379299999999997,
+        0.0432885
+      ],
+      "states": 1852243,
+      "transitions": 4518920
+    },
+    {
+      "count_sum_mod_p": [
+        "200532151440",
+        "200532151440",
+        "200532151440"
+      ],
+      "hash_sum_mod_p": [
+        "7185753600479496711",
+        "7185781684092523131",
+        "7185800540232698013"
+      ],
+      "input_on_disk": false,
+      "key_bits": 45,
+      "m": 21,
+      "output_on_disk": false,
+      "passes": 1,
+      "seconds": [
+        0.0949131,
+        0.0632892,
+        0.0655569
+      ],
+      "states": 2753313,
+      "transitions": 7523904
+    },
+    {
+      "count_sum_mod_p": [
+        "750421494720",
+        "750421494720",
+        "750421494720"
+      ],
+      "hash_sum_mod_p": [
+        "8626606115558914726",
+        "8626711220206288046",
+        "8626781790469524418"
+      ],
+      "input_on_disk": false,
+      "key_bits": 45,
+      "m": 20,
+      "output_on_disk": false,
+      "passes": 1,
+      "seconds": [
+        0.1101843,
+        0.1081941,
+        0.0955487
+      ],
+      "states": 3313756,
+      "transitions": 10716618
+    },
+    {
+      "count_sum_mod_p": [
+        "2714122474560",
+        "2714122474560",
+        "2714122474560"
+      ],
+      "hash_sum_mod_p": [
+        "7476815273004182756",
+        "7477195321315206676",
+        "7477450496609751308"
+      ],
+      "input_on_disk": false,
+      "key_bits": 45,
+      "m": 19,
+      "output_on_disk": false,
+      "passes": 1,
+      "seconds": [
+        0.12298070000000001,
+        0.1143542,
+        0.11161270000000001
+      ],
+      "states": 3544364,
+      "transitions": 12651684
+    }
+  ],
+  "machine": {
+    "cpu": "Intel(R) Core(TM) Ultra 9 290HX Plus",
+    "logical_cpus": 24,
+    "os": "windows",
+    "ram_bytes": 33756610560
+  },
+  "mitm": [
+    {
+      "dead_mid_states": 752413,
+      "join_passes": 1,
+      "join_seconds": 0.0627262,
+      "mid_states": 3544364,
+      "upper_states": 3544364
+    },
+    {
+      "dead_mid_states": 752413,
+      "join_passes": 1,
+      "join_seconds": 0.0517996,
+      "mid_states": 3544364,
+      "upper_states": 3544364
+    },
+    {
+      "dead_mid_states": 752413,
+      "join_passes": 1,
+      "join_seconds": 0.0659728,
+      "mid_states": 3544364,
+      "upper_states": 3544364
+    }
+  ],
+  "params": {
+    "N": 36,
+    "S": 111,
+    "algorithm": "mitm",
+    "block_size": 6,
+    "max_states": null,
+    "n_blocks": 6
+  },
+  "peak_rss_bytes": 208875520,
+  "peak_states": 3544364,
+  "primes": [
+    "9223372036854775783",
+    "9223372036854775643",
+    "9223372036854775549"
+  ],
+  "result": "6534071578530",
+  "runtime": {
+    "mem_budget_bytes": 11831083008,
+    "rustc": "rustc 1.99.1 (58cf8f9c3 2026-10-13)",
+    "shard_bits": 12,
+    "threads": 24
+  },
+  "schema": 1,
+  "started_utc": "2026-10-20T14:57:15+00:00",
+  "total_seconds": [
+    0.6241391,
+    0.5217862,
+    0.5283678
+  ]
+}

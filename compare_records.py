@@ -28,7 +28,9 @@ def compare(a: dict, b: dict) -> list[str]:
         if a["labeled_mod_p"][ia] != b["labeled_mod_p"][ib]:
             errs.append(f"labeled mod {pa[ia]}: {a['labeled_mod_p'][ia]} != {b['labeled_mod_p'][ib]}")
     la, lb = a["layers"], b["layers"]
-    if len(la) != len(lb):
+    # A meet-in-the-middle record stops at the midpoint; compare the layers both have.
+    partial = "mitm" in (a["params"].get("algorithm"), b["params"].get("algorithm"))
+    if len(la) != len(lb) and not partial:
         errs.append(f"layer count: {len(la)} != {len(lb)}")
     for x, y in zip(la, lb):
         m = x["m"]

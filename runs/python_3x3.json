@@ -1,0 +1,193 @@
+{
+ "schema": 1,
+ "implementation": "python-reference",
+ "code": {
+  "file": "equal_sum_partitions.py",
+  "sha256": "0df249e7b670ccb3a461b87fc54d4e13df6c4b75de78b5eb90481acf4da5d8f0",
+  "git_commit": "74c9ea3927344ca1c9aa4efaaa2e4fd5546eb4dc",
+  "git_dirty": false
+ },
+ "runtime": {
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "python_implementation": "CPython"
+ },
+ "machine": {
+  "os": "Windows-11-10.0.26200-SP0",
+  "cpu": "Intel(R) Core(TM) Ultra 9 290HX Plus",
+  "logical_cpus": 24,
+  "ram_bytes": 33756610560
+ },
+ "params": {
+  "n_blocks": 3,
+  "block_size": 3,
+  "N": 9,
+  "S": 15,
+  "max_states": null,
+  "algorithm": "forward"
+ },
+ "primes": [
+  "9223372036854775783",
+  "9223372036854775643",
+  "9223372036854775549"
+ ],
+ "started_utc": "2026-10-20T14:47:44+00:00",
+ "finished_utc": "2026-10-20T14:47:44+00:00",
+ "aborted": false,
+ "result": "2",
+ "labeled": "12",
+ "labeled_mod_p": [
+  "12",
+  "12",
+  "12"
+ ],
+ "peak_states": 3,
+ "total_seconds": 0.0,
+ "peak_rss_bytes": 21078016,
+ "disk_bytes": null,
+ "layers": [
+  {
+   "m": 9,
+   "states": 1,
+   "transitions": 1,
+   "seconds": 7e-06,
+   "count_sum_mod_p": [
+    "3",
+    "3",
+    "3"
+   ],
+   "hash_sum_mod_p": [
+    "3802307937272882306",
+    "3802307937272882446",
+    "3802307937272882540"
+   ]
+  },
+  {
+   "m": 8,
+   "states": 1,
+   "transitions": 1,
+   "seconds": 5e-06,
+   "count_sum_mod_p": [
+    "6",
+    "6",
+    "6"
+   ],
+   "hash_sum_mod_p": [
+    "5869440286332874213",
+    "5869440286332874913",
+    "5869440286332875383"
+   ]
+  },
+  {
+   "m": 7,
+   "states": 1,
+   "transitions": 2,
+   "seconds": 4e-06,
+   "count_sum_mod_p": [
+    "6",
+    "6",
+    "6"
+   ],
+   "hash_sum_mod_p": [
+    "5989775740576414813",
+    "5989775740576415513",
+    "5989775740576415983"
+   ]
+  },
+  {
+   "m": 6,
+   "states": 2,
+   "transitions": 3,
+   "seconds": 3e-06,
+   "count_sum_mod_p": [
+    "12",
+    "12",
+    "12"
+   ],
+   "hash_sum_mod_p": [
+    "3130774909114668748",
+    "3130774909114669868",
+    "3130774909114670620"
+   ]
+  },
+  {
+   "m": 5,
+   "states": 3,
+   "transitions": 4,
+   "seconds": 4e-06,
+   "count_sum_mod_p": [
+    "18",
+    "18",
+    "18"
+   ],
+   "hash_sum_mod_p": [
+    "6917508911044691955",
+    "6917508911044695735",
+    "6917508911044698273"
+   ]
+  },
+  {
+   "m": 4,
+   "states": 2,
+   "transitions": 3,
+   "seconds": 4e-06,
+   "count_sum_mod_p": [
+    "18",
+    "18",
+    "18"
+   ],
+   "hash_sum_mod_p": [
+    "711938958095316625",
+    "711938958095320685",
+    "711938958095323411"
+   ]
+  },
+  {
+   "m": 3,
+   "states": 1,
+   "transitions": 1,
+   "seconds": 2e-06,
+   "count_sum_mod_p": [
+    "12",
+    "12",
+    "12"
+   ],
+   "hash_sum_mod_p": [
+    "77005866927561110",
+    "77005866927562510",
+    "77005866927563450"
+   ]
+  },
+  {
+   "m": 2,
+   "states": 1,
+   "transitions": 1,
+   "seconds": 1e-06,
+   "count_sum_mod_p": [
+    "12",
+    "12",
+    "12"
+   ],
+   "hash_sum_mod_p": [
+    "8358796476903707748",
+    "8358796476903707748",
+    "8358796476903707748"
+   ]
+  },
+  {
+   "m": 1,
+   "states": 1,
+   "transitions": 1,
+   "seconds": 1e-06,
+   "count_sum_mod_p": [
+    "12",
+    "12",
+    "12"
+   ],
+   "hash_sum_mod_p": [
+    "7681369315911520858",
+    "7681369315911522818",
+    "7681369315911524134"
+   ]
+  }
+ ]
+}
