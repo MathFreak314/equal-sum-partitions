@@ -79,6 +79,7 @@ For n = 7 the largest layer has 1,522,654,175 states (m = 25). Two implementatio
    - F matches brute force on 11 small cases.
    - F has the right parity for all 13 known values.
    - For 7x7, F = 36518238043, which predicts A321230(7) is odd. It is.
+   - That value of F is exact: `python parity_check.py --exact` recomputes it in big integers.
 7. **Consistent layer statistics.**
    - Per-layer state and transition counts are identical across the three prime runs and the meet-in-the-middle run.
    - For m ≥ 35 they also equal the counts from an earlier Python-reference probe, run on a different machine (`runs/python_7x7_partial_layers.csv`).
@@ -132,6 +133,38 @@ Each run record states its code commit, compiler, machine and timings.
 | `parity_check.py` | the independent parity check |
 | `check_7x7.py` | 7x7 cross-checks and final value |
 | `runs/` | reference run records for 3x3..6x6 (`python_*`, `rust_*`), the 7x7 Python probe, and the 7x7 runs (`7x7_dev/`) |
+
+## How AI was used
+
+This project was built with substantial help from an AI coding assistant, Anthropic's **Claude**, used through **Claude Code**:
+- The Python reference implementation, its tests and the first scaling study came from an earlier Claude Code session. The model version for that session was not recorded.
+- Everything else came from a Claude Code session on 2026-10-20 using **Claude Opus 5.5**.
+
+**What the AI did:**
+- **Algorithms.** It proposed and wrote all the code in this repository: the layered DP, its pruning bounds, the meet-in-the-middle pairing, counting modulo primes with CRT, the key packing, and the out-of-core multi-pass storage.
+- **Validation.** It designed the validation: the per-layer fingerprint spec, the comparison and check scripts, and the parity argument behind `parity_check.py` along with its subset-convolution evaluation.
+- **Runs.** It ran the computations and analysed their logs.
+- **Documentation.** It wrote this README, `FINGERPRINT_SPEC.md`, `runs/7x7_dev/README.md`, and the code comments and docstrings.
+
+**What Daniel Branscombe did:**
+- Chose the problem and the goal.
+- Set the requirements: correctness before speed, strong independent validation, and the available hardware.
+- Directed and approved each stage.
+- Provided the machines and chose when to run the computations.
+
+At the time of publication **he had not yet independently verified the mathematics or reviewed the code line by line**, and he is now studying both.
+
+**What this means for the result.** A321230(7) = 4302062977337507872775 should be treated as a computational result produced by AI-written software. Its credibility rests on the checks under [Validation](#validation), not on human review of the code:
+- It reproduces every known value.
+- Two implementations agree on every intermediate layer.
+- Three primes agree.
+- The labeled count is divisible by 7!.
+- A second algorithm gives the same residue.
+- An independent parity argument agrees.
+
+An **independent recomputation**, especially one written from scratch, would be the strongest further confirmation, and is very welcome.
+
+No AI tool is an author of this work. Because of the [OEIS policy on AI use](https://oeis.org/wiki/Use_of_AI_for_OEIS_Submissions), this value has **not** been submitted to the OEIS. It will only be submitted once the human author can explain and defend the methods himself.
 
 ## License
 

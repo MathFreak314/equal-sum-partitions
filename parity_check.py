@@ -17,7 +17,8 @@ Ordered covers come from a ranked subset convolution:
 where ĝ is the zeta transform over subsets X of the pairs. Everything is computed mod 2^64
 with numpy uint64, which leaves F modulo 2^(64 - v2(a! t!)).
 
-    py parity_check.py          # validates on small cases and known values, then reports 7x7
+    python parity_check.py            # validates on small cases and known values, then reports 7x7
+    python parity_check.py --exact    # also computes F(7,7) exactly (a few minutes)
 """
 
 import itertools
@@ -37,11 +38,15 @@ def _zeta(a: np.ndarray, P: int) -> None:
         v[:, 1, :] += v[:, 0, :]
 
 
-def fixed_count(n: int, k: int) -> tuple[int, int]:
-    """(F mod 2^bits, bits) for partitions of 1..nk fixed by x -> nk+1-x."""
+def fixed_count(n: int, k: int, exact: bool = False) -> tuple[int, int]:
+    """(F mod 2^bits, bits) for partitions of 1..nk fixed by x -> nk+1-x.
+
+    With exact=True the final sums use Python integers and F is returned exactly (bits = 0).
+    That mode is slower and needs the zeta values to fit in int64, which they do for n, k <= 7.
+    """
     N = n * k
     if k * (N + 1) % 2:
-        return 0, 64
+        return 0, (0 if exact else 64)
     S = k * (N + 1) // 2
     P = N // 2
     size = 1 << P
@@ -70,6 +75,25 @@ def fixed_count(n: int, k: int) -> tuple[int, int]:
         cases = [(1, (n - 1) // 2)]          # the centre forces exactly one type-A block
     else:
         cases = [(n - 2 * t, t) for t in range(n // 2 + 1)]
+
+    if exact:
+        # Σ_X (-1)^{P-|X|} C(|X|,α)^a ĝB(X)^t, grouped by |X|, in exact integers.
+        g = gB.astype(np.int64)
+        total = 0
+        for a, t in cases:
+            if a * alpha + t * k != P:
+                continue
+            ordered = 0
+            for j in range(P + 1):
+                ca = math.comb(j, alpha) ** a
+                if ca == 0:
+                    continue
+                powsum = sum(int(x) ** t for x in g[pc == j].tolist()) if t else math.comb(P, j)
+                ordered += (-1) ** (P - j) * ca * powsum
+            d = math.factorial(a) * math.factorial(t)
+            assert ordered % d == 0
+            total += ordered // d
+        return total, 0
 
     total, bits = 0, 64
     with np.errstate(over="ignore"):
@@ -136,8 +160,21 @@ def main() -> int:
         ok &= good
         print(f"  A({n},{k}) = {a}  F = {f}  parity {'OK' if good else 'MISMATCH'}")
 
+    print("exact mode vs mod-2^64 mode:")
+    for n, k in [(3, 5), (4, 4), (5, 5), (4, 6), (6, 6)]:
+        fe, _ = fixed_count(n, k, exact=True)
+        f, bits = fixed_count(n, k)
+        good = fe % (1 << bits) == f
+        ok &= good
+        print(f"  {n}x{k}: exact F = {fe}  {'OK' if good else 'MISMATCH'}")
+
     f, bits = fixed_count(7, 7)
     print(f"7x7: F mod 2^{bits} = {f}  =>  A(7,7) is {'odd' if f % 2 else 'even'}")
+    if "--exact" in sys.argv:
+        fe, _ = fixed_count(7, 7, exact=True)
+        good = fe % (1 << bits) == f
+        ok &= good
+        print(f"7x7: exact F = {fe}  {'(agrees)' if good else 'MISMATCH'}")
     print("all checks passed" if ok else "CHECKS FAILED")
     return 0 if ok else 1
 
