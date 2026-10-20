@@ -849,10 +849,13 @@ fn forward(ctx: &mut Ctx, res: &mut RunResult, last_m: u32, keep_rest: Option<u3
 }
 
 fn new_ctx(o: &RunOpts) -> Ctx<'_> {
+    // Unique per run, so concurrent runs in one process never share part files.
+    static RUN_ID: AtomicU64 = AtomicU64::new(0);
     assert!(o.n <= MAX_BLOCKS && o.p < 1 << 63 && o.shard_bits <= 20);
     Ctx {
         o,
-        dir: o.work_dir.join(format!("esp_{}x{}_{}_{}", o.n, o.k, o.p, std::process::id())),
+        dir: o.work_dir.join(format!("esp_{}x{}_{}_{}_{}", o.n, o.k, o.p, std::process::id(),
+                                     RUN_ID.fetch_add(1, Ordering::Relaxed))),
         disk: DiskUse::default(),
     }
 }
