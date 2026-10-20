@@ -1,0 +1,49 @@
+  m= 49  states=             1  transitions=               1  bits= 66  passes=  1      0.001s  rss=8 MB  disk=0.0 GB
+  m= 48  states=             2  transitions=               2  bits= 66  passes=  1      0.007s  rss=10 MB  disk=0.0 GB
+  m= 47  states=             5  transitions=               5  bits= 66  passes=  1      0.007s  rss=10 MB  disk=0.0 GB
+  m= 46  states=            14  transitions=              14  bits= 66  passes=  1      0.007s  rss=10 MB  disk=0.0 GB
+  m= 45  states=            43  transitions=              45  bits= 66  passes=  1      0.006s  rss=10 MB  disk=0.0 GB
+  m= 44  states=           145  transitions=             157  bits= 66  passes=  1      0.006s  rss=10 MB  disk=0.0 GB
+  m= 43  states=           523  transitions=             584  bits= 66  passes=  1      0.006s  rss=10 MB  disk=0.0 GB
+  m= 42  states=          1990  transitions=            2337  bits= 60  passes=  1      0.007s  rss=10 MB  disk=0.0 GB
+  m= 41  states=          7926  transitions=           10013  bits= 60  passes=  1      0.007s  rss=10 MB  disk=0.0 GB
+  m= 40  states=         33124  transitions=           44360  bits= 60  passes=  1      0.010s  rss=11 MB  disk=0.0 GB
+  m= 39  states=        140948  transitions=          199239  bits= 60  passes=  1      0.015s  rss=15 MB  disk=0.0 GB
+  m= 38  states=        576660  transitions=          881834  bits= 60  passes=  1      0.016s  rss=30 MB  disk=0.0 GB
+  m= 37  states=       2145215  transitions=         3661050  bits= 60  passes=  1      0.050s  rss=80 MB  disk=0.0 GB
+  m= 36  states=       6967013  transitions=        13579402  bits= 60  passes=  1      0.192s  rss=240 MB  disk=0.0 GB
+  m= 35  states=      19560399  transitions=        43476690  bits= 60  passes=  1      1.144s  rss=670 MB  disk=0.0 GB
+  m= 34  states=      47836438  transitions=       119397997  bits= 60  passes=  1      3.181s  rss=1642 MB  disk=0.0 GB
+  m= 33  states=     102706935  transitions=       283930685  bits= 60  passes=  1      4.695s  rss=3523 MB  disk=0.0 GB
+  m= 32  states=     197069646  transitions=       594386597  bits= 60  passes=  1      7.684s  rss=7403 MB  disk=0.0 GB
+  m= 31  states=     347805069  transitions=      1116243055  bits= 60  passes=  1     12.150s  rss=11517 MB  disk=0.0 GB
+  m= 30  states=     566191895  transitions=      1919773113  bits= 60  passes=  2 out:disk     29.979s  rss=12226 MB  disk=9.1 GB
+  m= 29  states=     850018360  transitions=      3039868263  bits= 60  passes=  2 in:disk out:disk     86.944s  rss=12226 MB  disk=13.6 GB
+  m= 28  states=    1164712599  transitions=      4426228419  bits= 60  passes=  3 in:disk out:disk    110.712s  rss=12226 MB  disk=18.6 GB
+  m= 27  states=    1391680915  transitions=      5870177516  bits= 60  passes=  3 in:disk out:disk    136.925s  rss=12226 MB  disk=22.3 GB
+  m= 26  states=    1510736835  transitions=      6859747469  bits= 60  passes=  3 in:disk out:disk    131.805s  rss=12226 MB  disk=24.2 GB
+  m= 25  states=    1522654175  transitions=      7327658149  bits= 60  passes=  3 in:disk out:disk    140.589s  rss=12226 MB  disk=24.4 GB
+  m= 24  states=    1447707872  transitions=      7277199723  bits= 54  passes=  3 in:disk out:disk    129.294s  rss=12226 MB  disk=23.2 GB
+  m= 23  states=    1277652739  transitions=      6769946166  bits= 54  passes=  3 in:disk out:disk    118.388s  rss=12226 MB  disk=20.4 GB
+  m= 22  states=     991813441  transitions=      5777689004  bits= 54  passes=  2 in:disk out:disk     86.003s  rss=12226 MB  disk=15.9 GB
+  m= 21  states=     697273210  transitions=      4342801179  bits= 54  passes=  2 in:disk out:disk     59.678s  rss=12226 MB  disk=11.2 GB
+  m= 20  states=     445797496  transitions=      2949351735  bits= 54  passes=  1 in:disk     28.674s  rss=12226 MB  disk=0.0 GB
+  m= 19  states=     260815026  transitions=      1818028697  bits= 54  passes=  1 in:disk out:disk     26.780s  rss=12226 MB  disk=4.2 GB
+  m= 18  states=     142160027  transitions=      1021986775  bits= 54  passes=  1 in:disk      9.333s  rss=12226 MB  disk=0.0 GB
+  m= 17  states=      71122402  transitions=       529106106  bits= 54  passes=  1      4.746s  rss=12226 MB  disk=0.0 GB
+  m= 16  states=      31764731  transitions=       248372101  bits= 54  passes=  1      2.772s  rss=12226 MB  disk=0.0 GB
+  m= 15  states=      12701396  transitions=       103601864  bits= 54  passes=  1      2.084s  rss=12226 MB  disk=0.0 GB
+  m= 14  states=       4554730  transitions=        38461729  bits= 48  passes=  1      0.677s  rss=12226 MB  disk=0.0 GB
+  m= 13  states=       1467465  transitions=        12713855  bits= 48  passes=  1      0.714s  rss=12226 MB  disk=0.0 GB
+  m= 12  states=        426821  transitions=         3748474  bits= 48  passes=  1      0.070s  rss=12226 MB  disk=0.0 GB
+  m= 11  states=        112909  transitions=          989300  bits= 48  passes=  1      0.030s  rss=12226 MB  disk=0.0 GB
+  m= 10  states=         27574  transitions=          235265  bits= 42  passes=  1      0.032s  rss=12226 MB  disk=0.0 GB
+  m=  9  states=          6354  transitions=           51090  bits= 42  passes=  1      0.026s  rss=12226 MB  disk=0.0 GB
+  m=  8  states=          1409  transitions=           10469  bits= 36  passes=  1      0.025s  rss=12226 MB  disk=0.0 GB
+  m=  7  states=           313  transitions=            2086  bits= 36  passes=  1      0.024s  rss=12226 MB  disk=0.0 GB
+  m=  6  states=            75  transitions=             427  bits= 30  passes=  1      0.022s  rss=12226 MB  disk=0.0 GB
+  m=  5  states=            20  transitions=              92  bits= 24  passes=  1      0.024s  rss=12226 MB  disk=0.0 GB
+  m=  4  states=             6  transitions=              22  bits= 18  passes=  1      0.023s  rss=12226 MB  disk=0.0 GB
+  m=  3  states=             2  transitions=               6  bits= 12  passes=  1      0.024s  rss=12226 MB  disk=0.0 GB
+  m=  2  states=             1  transitions=               2  bits=  6  passes=  1      0.026s  rss=12226 MB  disk=0.0 GB
+  m=  1  states=             1  transitions=               1  bits=  0  passes=  1      0.023s  rss=12226 MB  disk=0.0 GB

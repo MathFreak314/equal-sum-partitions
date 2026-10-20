@@ -1,0 +1,5 @@
+A(7,7): numbers 1..49, block sum 175, threads 24
+memory budget 11.50 GB (available 18.64 GB), work dir C:\compute
+prime p0 = 9223372036854775783 (meet in the middle)
+  mid states = 1522654175  upper states = 1510736835  dead mid states = 334377879  join passes = 3  join = 142.81s
+  labeled mod p0 = 2187822464220351770  peak states = 1522654175  time = 662.90s  peak RSS = 12180.1 MB  peak disk = 48.53 GB

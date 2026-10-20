@@ -1,0 +1,4 @@
+A(7,7): numbers 1..49, block sum 175, threads 24
+memory budget 11.50 GB (available 16.48 GB), work dir C:\compute
+prime p0 = 9223372036854775783
+  labeled mod p0 = 2187822464220351770  peak states = 1522654175  time = 1154.74s  peak RSS = 12226.2 MB  peak disk = 48.53 GB
