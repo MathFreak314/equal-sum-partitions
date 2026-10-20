@@ -54,11 +54,15 @@ def main(paths) -> int:
             rows = csv.DictReader(open(p))
             tables.append((p, {int(r["m"]): (int(r["states"]), int(r["transitions"])) for r in rows}))
     forward, mitm = {}, {}
-    for r in recs:
+    ok = True
+    for path, r in zip(rec_paths, recs):
         dest = mitm if r["params"]["algorithm"] == "mitm" else forward
         for p, v in zip(r["primes"], r["labeled_mod_p"]):
-            dest[int(p)] = int(v)
-    ok = True
+            p, v = int(p), int(v)
+            if p in dest and dest[p] != v:
+                ok = False
+                print(f"{path}: residue mod {p} = {v} disagrees with another record ({dest[p]})")
+            dest[p] = v
     if set(forward) != set(PRIMES):
         print(f"forward residues missing for primes {sorted(set(PRIMES) - set(forward))}")
         return 1
