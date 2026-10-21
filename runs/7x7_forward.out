@@ -1,0 +1,12 @@
+A(7,7): numbers 1..49, block sum 175, threads 24
+memory budget 11.00 GB (available 19.18 GB), work dir C:\compute
+prime p0 = 9223372036854775783
+  labeled mod p0 = 2187822464220351770  peak states = 1522654175  time = 1038.21s  peak RSS = 11676.8 MB  peak disk = 48.53 GB
+prime p1 = 9223372036854775643
+  labeled mod p1 = 2187822464549465170  peak states = 1522654175  time = 977.02s  peak RSS = 11712.4 MB  peak disk = 48.53 GB
+prime p2 = 9223372036854775549
+  labeled mod p2 = 2187822464770441310  peak states = 1522654175  time = 974.34s  peak RSS = 11718.2 MB  peak disk = 48.53 GB
+labeled (CRT p0,p1) = 21682397405781039678786000
+extra prime checks: OK
+divisible by 7! = 5040: true
+result = 4302062977337507872775

@@ -1,0 +1,16 @@
+CRT(p=9223372036854775783, p=9223372036854775643) gives the same value: True
+CRT(p=9223372036854775783, p=9223372036854775549) gives the same value: True
+labeled < 49!/(7!)^7: True
+divisible by 7!: True
+parity matches the complement-fixed count F = 36518238043: True
+meet-in-the-middle residue mod 9223372036854775783 equals forward: True
+runs/7x7_mitm_p0.json (record): 25 shared layers identical to runs/7x7_forward.json (record): True
+runs/7x7_dev/forward_p0.json (record): 49 shared layers identical to runs/7x7_forward.json (record): True
+runs/7x7_forward.log run 1: 49 shared layers identical to runs/7x7_forward.json (record): True
+runs/7x7_forward.log run 2: 49 shared layers identical to runs/7x7_forward.json (record): True
+runs/7x7_forward.log run 3: 49 shared layers identical to runs/7x7_forward.json (record): True
+runs/7x7_mitm_p0.log run 1: 25 shared layers identical to runs/7x7_forward.json (record): True
+runs/python_7x7_partial_layers.csv: 15 shared layers identical to runs/7x7_forward.json (record): True
+labeled = 21682397405781039678786000
+A(7,7) = 4302062977337507872775
+ALL CHECKS PASSED
